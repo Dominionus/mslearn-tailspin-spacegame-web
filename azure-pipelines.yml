@@ -12,6 +12,9 @@ steps:
   inputs:
     version: 3.1.100
 
+- script: 'npm install -g npm'
+  displayName: 'Upgrade NPM'
+
 - task: Npm@1
   displayName: 'Run npm install'
   inputs:
